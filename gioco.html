@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+	
+	
+	<head>
+
+		<title>Morra Cinese</title>
+	</head>
+	<style>
+	body{
+	background-color:green;
+	}
+	</style>
+	
+	<body>
+	
+	<div id="tuodiv"></div>	
+		<div align="center">
+		<h1 id="titolo" > Benvenuto </h1>
+			<h2>Sasso Carta Forbice</h2>
+			<div>
+				<h1 id="player"></h1>
+				<br>
+				<br>
+				<span id="risultato"></span>
+				<br>
+				<br>
+				Punteggio:
+				<span id="punteggiop1">0</span> - <span id="punteggiocpu">0</span></h3>
+				<h4>Fai la tua scelta</h4>
+			</div>
+ 
+			<br>
+			<br>
+ 
+			<div>
+				<img src="img/carta1.png" onclick="Scelta(0)" id="scelta0">
+				<img src="img/sasso1.png" onclick="Scelta(1)" id="scelta1">
+				<img src="img/forbice1.png" onclick="Scelta(2)" id="scelta2">
+		</div>
+ 
+			<br>
+			<br>
+ 
+		<div>
+			<h4>Scelta CPU</h4>
+			<img id="sceltacpu">
+		</div>
+            	<div align="right">
+            		
+                	<br>
+                	<h6>SALVATORE PARMENDOLA</h6>
+            	</div>
+	</div>
+	<script >
+	alert("BENVENUTO GAMER SEI PRONTO PER UN GIOCO BELLISSIMO,PREMI OK E METTI IL TUO NOME E COMINCIA GIOCARE PLAYER");
+	
+	var NOME = window.prompt ("Benvenuto,per iniziare inserisci il tuo nick name");
+	
+    document.getElementById("titolo").innerHTML = "Benvenuto: " + NOME;
+	document.getElementById("player").innerHTML = NOME + " - CPU";
+	
+	var figure = ["carta1", "sasso1", "forbice1"];
+	var punteggiop1 = 0;
+	var punteggiocpu = 0;
+	var sceltaprecedente = 0;
+	var risultato="";
+   	 function vinto()
+    	{
+    		var sound = new Audio("haivinto.ogg");
+    		sound.play();
+	}
+	function perso()
+    	{
+    		var sound = new Audio("haiperso.ogg");
+    		sound.play();
+	}
+	function pareggiato()
+   	 {
+    		var sound = new Audio("haipareggiato.ogg");
+    		sound.play();
+	}
+   
+	function Scelta(scelta)
+	{
+		var cpu = Math.floor((Math.random() * 3));
+ 
+		
+ 
+		if(scelta == 0)
+		{
+			switch(cpu)
+			{
+				case 0:
+					document.getElementById("sceltacpu").src = "img/"+figure[cpu]+".png";
+					risultato="Hai Pareggiato!";
+                    			pareggiato();
+					break;
+				case 1:
+					document.getElementById("sceltacpu").src = "img/"+figure[cpu]+".png";
+					punteggiop1++;
+					risultato="Hai Vinto!";
+                   			 vinto();
+					break;
+				case 2:
+					document.getElementById("sceltacpu").src = "img/"+figure[cpu]+".png";
+					punteggiocpu++;
+					risultato="Hai Perso!";
+                   			 perso();
+					break;
+			}
+		}
+ 
+		if(scelta == 1)
+		{
+			switch(cpu)
+			{
+				case 0:
+					document.getElementById("sceltacpu").src = "img/"+figure[cpu]+".png";
+					punteggiocpu++;
+					risultato="Hai Perso!";
+                    			perso();
+					break;
+				case 1:
+					document.getElementById("sceltacpu").src = "img/"+figure[cpu]+".png";
+					risultato="Hai Pareggiato!";
+                   			 pareggiato();
+					break;
+				case 2:
+					document.getElementById("sceltacpu").src = "img/"+figure[cpu]+".png";
+					punteggiop1++;
+					risultato="Hai Vinto!";
+                    			vinto();
+					break;
+			}
+		}
+ 
+		if(scelta == 2)
+		{
+			switch(cpu)
+			{
+				case 0:
+					document.getElementById("sceltacpu").src = "img/"+figure[cpu]+".png";
+					punteggiop1++;
+					risultato="Hai Vinto!";
+                   			vinto();
+					break;
+				case 1:
+					document.getElementById("sceltacpu").src = "img/"+figure[cpu]+".png";
+					punteggiocpu++;
+					risultato="Hai Perso!";
+                    			perso();
+					break;
+				case 2:
+					document.getElementById("sceltacpu").src = "img/"+figure[cpu]+".png";
+					risultato="Hai Pareggiato!";
+                   		 	pareggiato();
+					break;
+			}
+		}
+ 
+		document.getElementById("punteggiop1").innerHTML = punteggiop1;
+		document.getElementById("punteggiocpu").innerHTML = punteggiocpu;
+		document.getElementById("risultato").innerHTML = risultato;
+		sceltaprecedente = scelta;
+	}
+	</script>
+       </body>
+</html>

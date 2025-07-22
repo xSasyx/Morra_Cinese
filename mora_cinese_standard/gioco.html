@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+	
+	
+	<head>
+
+		<title>Morra Cinese</title>
+	</head>
+	<style>
+	body{
+	background-color:white;
+	}
+	button{
+		color: black;
+	}
+	table,td,tr{
+		text-align: center;
+		border: 1px solid black;
+	}
+	</style>
+	
+	<body>
+	
+	<div id="tuodiv"></div>	
+		<div align="center">
+		<h1 id="titolo" > Benvenuto </h1>
+			<h2>Sasso Carta Forbice</h2>
+			<div>
+				<br>
+			</div>
+ 
+			<br>
+			<br>
+			<table>
+				<tr><td>PLAYER1</td><td>PLAYER2</td></tr>
+				<tr><td> <img id="P1" src="int.png"></td><td><img id="P2"src="int.png"></td></tr>
+				<tr><td><button onclick="Scelta()">Gioca</button></td><td><button onclick="reset()">Reset</button></td></tr>
+				</table>
+				<span id="risultato">Chi sarà il vincitore?</span>
+            <table>
+                
+	</div>
+	<script >
+	
+	var figure1 = ["carta", "sasso", "forbice"];
+	var figure2 = ["carta", "sasso", "forbice"];
+	var risultato="";
+
+	function Scelta()
+	{
+		var p1 = Math.floor((Math.random() * 3));
+        var p2 = Math.floor((Math.random() * 3));
+		
+ 
+		if(p1  == 0)
+		{
+			document.getElementById("P1").src = "img/"+figure1[p1]+".png";
+			switch(p2)
+			{
+				case 0:
+				document.getElementById("P2").src = "img/"+figure2[p2]+".png";
+					risultato="Avete pareggiato!";
+					document.getElementById("risultato").innerHTML = risultato;	
+					break;
+				case 1:
+				document.getElementById("P2").src = "img/"+figure2[p2]+".png";
+					
+					risultato="Player1 ha vinto";
+					document.getElementById("risultato").innerHTML = risultato;	
+					break;
+				case 2:
+				document.getElementById("P2").src = "img/"+figure2[p2]+".png";
+					
+					risultato="Player2 ha vinto";
+					document.getElementById("risultato").innerHTML = risultato;
+					break;
+			}
+		}
+ 
+		if(p1  == 1)
+		{
+			document.getElementById("P1").src = "img/"+figure1[p1]+".png";
+			switch(p2)
+			{
+				case 0:
+				document.getElementById("P2").src = "img/"+figure2[p2]+".png";
+					
+					risultato="Player2 ha vinto";
+					document.getElementById("risultato").innerHTML = risultato;
+					break;
+				case 1:
+				document.getElementById("P2").src = "img/"+figure2[p2]+".png";
+					risultato="Avete pareggiato!";
+					document.getElementById("risultato").innerHTML = risultato;
+					break;
+				case 2:
+				document.getElementById("P2").src = "img/"+figure2[p2]+".png";
+					
+					risultato="Player1 ha vinto";
+					document.getElementById("risultato").innerHTML = risultato;
+					break;
+			}
+		}
+ 
+		if(p1  == 2)
+		{
+			document.getElementById("P1").src = "img/"+figure1[p1]+".png";
+			switch(p2)
+			{
+				case 0:
+				document.getElementById("P2").src = "img/"+figure2[p2]+".png";
+					
+					risultato="Player1 ha vinto";
+					document.getElementById("risultato").innerHTML = risultato;
+					break;
+				case 1:
+				document.getElementById("P2").src = "img/"+figure2[p2]+".png";
+					
+					risultato="Player2 ha vinto";
+					document.getElementById("risultato").innerHTML = risultato;
+					break;
+				case 2:
+				document.getElementById("P2").src = "img/"+figure2[p2]+".png";
+					risultato="Avete pareggiato!";
+					document.getElementById("risultato").innerHTML = risultato;
+					break;
+			}
+		}
+	}
+  function reset(){
+	document.getElementById("P1").src = "int"+".png";
+	document.getElementById("P2").src = "int"+".png";
+	risultato="Chi sarà il vincitore?";
+	document.getElementById("risultato").innerHTML = risultato;
+  }
+	</script>
+       </body>
+</html>
