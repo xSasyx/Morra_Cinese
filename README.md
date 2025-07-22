@@ -16,7 +16,7 @@ Questa versione è un gioco interattivo che si esegue direttamente in un browser
 * **Input del Giocatore:** L'utente effettua la sua scelta cliccando sulle immagini corrispondenti a carta, sasso o forbice.
 * **Personalizzazione:** All'avvio, il gioco chiede al giocatore di inserire il proprio nome, che viene poi visualizzato nell'interfaccia.
 * **Avversario CPU:** L'avversario è controllato dal computer, che effettua una scelta in modo casuale ad ogni turno.
-* [cite_start]**Feedback Audio:** Vengono riprodotti suoni specifici per ogni risultato: vittoria [cite: 2, 3, 4, 5, 6, 7, 8, 9, 10][cite_start], sconfitta [cite: 1] [cite_start]o pareggio[cite: 11, 12, 13].
+* **Feedback Audio:** Vengono riprodotti suoni specifici per ogni risultato: vittoria,sconfitta o pareggio.
 * **Visualizzazione Risultati:** La scelta della CPU viene mostrata a schermo dopo la mossa del giocatore.
 * **Punteggio Dinamico:** Il punteggio tra giocatore e CPU viene aggiornato e mostrato in tempo reale sulla pagina.
 
@@ -76,7 +76,7 @@ This version is an interactive game that runs directly in a web browser. The use
 * **Player Input:** The user makes their choice by clicking on the images corresponding to paper, rock, or scissors.
 * **Personalization:** On startup, the game prompts the player to enter their name, which is then displayed in the interface.
 * **CPU Opponent:** The opponent is controlled by the computer, which makes a random choice each turn.
-* [cite_start]**Audio Feedback:** Specific sounds are played for each outcome: a win [cite: 2, 3, 4, 5, 6, 7, 8, 9, 10][cite_start], a loss [cite: 1][cite_start], or a draw[cite: 11, 12, 13].
+* [cite_start]**Audio Feedback:** Specific sounds are played for each outcome: a win , a loss or a draw.
 * **Result Display:** The CPU's choice is shown on screen after the player's move.
 * **Dynamic Scoring:** The score between the player and the CPU is updated and displayed in real-time on the page.
 
