@@ -1,1 +1,118 @@
-# Morra_Cinese
+# Morra Cinese 
+
+> ## Descrizione in Italiano
+
+Questo progetto contiene due versioni di un gioco di Morra Cinese (Sasso, Carta, Forbice): una **avanzata** con interfaccia grafica e una **semplice** che funziona come simulatore.
+
+---
+
+### **Versione Avanzata (Browser Game)**
+
+Questa versione è un gioco interattivo che si esegue direttamente in un browser web. L'utente gioca contro il computer (CPU) scegliendo una delle tre mosse tramite un'interfaccia grafica.
+
+**Caratteristiche:**
+
+* **Interfaccia Grafica (GUI):** Il gioco presenta un'interfaccia visiva creata con HTML.
+* **Input del Giocatore:** L'utente effettua la sua scelta cliccando sulle immagini corrispondenti a carta, sasso o forbice.
+* **Personalizzazione:** All'avvio, il gioco chiede al giocatore di inserire il proprio nome, che viene poi visualizzato nell'interfaccia.
+* **Avversario CPU:** L'avversario è controllato dal computer, che effettua una scelta in modo casuale ad ogni turno.
+* [cite_start]**Feedback Audio:** Vengono riprodotti suoni specifici per ogni risultato: vittoria [cite: 2, 3, 4, 5, 6, 7, 8, 9, 10][cite_start], sconfitta [cite: 1] [cite_start]o pareggio[cite: 11, 12, 13].
+* **Visualizzazione Risultati:** La scelta della CPU viene mostrata a schermo dopo la mossa del giocatore.
+* **Punteggio Dinamico:** Il punteggio tra giocatore e CPU viene aggiornato e mostrato in tempo reale sulla pagina.
+
+**Tecnologie Utilizzate:**
+
+* HTML
+* CSS
+* JavaScript
+
+**Come Avviare il Gioco:**
+
+1.  Assicurati che il file `gioco.html`, i file audio (`.ogg`) e la cartella `img` con le immagini si trovino nella stessa directory.
+2.  Apri il file `gioco.html` con un qualsiasi browser web.
+
+---
+
+### **Versione Semplice (Simulatore CPU vs CPU)**
+
+Questa versione è una simulazione semplificata del gioco, eseguita anch'essa in un browser. A differenza della versione avanzata, l'utente non partecipa attivamente ma agisce come spettatore di una partita tra due giocatori controllati dal computer.
+
+**Caratteristiche:**
+
+* **Modalità Simulatore:** Il gioco è una simulazione CPU vs CPU. Entrambe le scelte (PLAYER1 e PLAYER2) sono generate casualmente dal computer.
+* **Interazione tramite Pulsanti:** L'utente avvia ogni round cliccando sul pulsante "Gioca".
+* **Feedback Visivo:** Le mosse scelte da entrambi i giocatori vengono mostrate tramite immagini e il risultato del round viene comunicato con un messaggio di testo.
+* **Nessun Punteggio:** Questa versione non tiene traccia di un punteggio complessivo. Mostra solo il risultato del singolo round.
+* **Funzione Reset:** È presente un pulsante "Reset" che riporta la schermata allo stato iniziale.
+* **Nessun Suono:** La simulazione è puramente visiva e non include feedback audio.
+
+**Tecnologie Utilizzate:**
+
+* HTML
+* CSS
+* JavaScript
+
+**Come Avviare il Gioco:**
+
+1.  Assicurati che il file `gioco.html` e la cartella `img` con le immagini si trovino nella stessa directory.
+2.  Apri il file `gioco.html` con un qualsiasi browser web.
+
+---
+---
+
+> ## Description in English
+
+This project contains two versions of a Rock-Paper-Scissors game: an **advanced** version with a graphical interface and a **simple** version that works as a simulator.
+
+---
+
+### **Advanced Version (Browser Game)**
+
+This version is an interactive game that runs directly in a web browser. The user plays against the computer (CPU) by choosing one of the three moves through a graphical interface.
+
+**Features:**
+
+* **Graphical User Interface (GUI):** The game features a visual interface created with HTML.
+* **Player Input:** The user makes their choice by clicking on the images corresponding to paper, rock, or scissors.
+* **Personalization:** On startup, the game prompts the player to enter their name, which is then displayed in the interface.
+* **CPU Opponent:** The opponent is controlled by the computer, which makes a random choice each turn.
+* [cite_start]**Audio Feedback:** Specific sounds are played for each outcome: a win [cite: 2, 3, 4, 5, 6, 7, 8, 9, 10][cite_start], a loss [cite: 1][cite_start], or a draw[cite: 11, 12, 13].
+* **Result Display:** The CPU's choice is shown on screen after the player's move.
+* **Dynamic Scoring:** The score between the player and the CPU is updated and displayed in real-time on the page.
+
+**Technologies Used:**
+
+* HTML
+* CSS
+* JavaScript
+
+**How to Run the Game:**
+
+1.  Ensure that the `gioco.html` file, the audio files (`.ogg`), and the `img` folder with the images are all in the same directory.
+2.  Open the `gioco.html` file with any web browser.
+
+---
+
+### **Simple Version (CPU vs CPU Simulator)**
+
+This version is a simplified simulation of the game, also running in a browser. Unlike the advanced version, the user does not participate actively but acts as a spectator to a match between two computer-controlled players.
+
+**Features:**
+
+* **Simulator Mode:** The game is a CPU vs CPU simulation. Both choices (PLAYER1 and PLAYER2) are randomly generated by the computer.
+* **Button Interaction:** The user starts each round by clicking the "Gioca" (Play) button.
+* **Visual Feedback:** The moves chosen by both players are displayed as images, and the round's result is shown as a text message.
+* **No Scoring:** This version does not keep track of an overall score. It only shows the result of a single round.
+* **Reset Function:** A "Reset" button is available to return the screen to its initial state.
+* **No Audio:** The simulation is purely visual and does not include any audio feedback.
+
+**Technologies Used:**
+
+* HTML
+* CSS
+* JavaScript
+
+**How to Run the Game:**
+
+1.  Ensure that the `gioco.html` file and the `img` folder (containing the images) are in the same directory.
+2.  Open the `gioco.html` file with any web browser.
